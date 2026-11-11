@@ -26,6 +26,9 @@
 **/data/
 *.db
 
+# Firebase credentials & secrets
+*firebase*.json
+
 # ------------------------------------------
 # 2. Frontend (React / Node / Webpack)
 # ------------------------------------------
