@@ -89,7 +89,7 @@ export default function Marketplace() {
             <SimpleGrid columns={{ base: 1, md: 3 }} gap='20px'>
               <NFT
                 name='User Data'
-                author='By SE_03 Team'
+                author='By SE04 Team'
                 bidders={[
                   Avatar1,
                   Avatar2,
@@ -105,7 +105,7 @@ export default function Marketplace() {
               />
               <NFT
                 name='Apartment Data'
-                author='By SE_03 Team'
+                author='By SE04 Team'
                 bidders={[
                   Avatar1,
                   Avatar2,
@@ -121,7 +121,7 @@ export default function Marketplace() {
               />
               <NFT
                 name='Bill Data '
-                author='By SE_03 Team'
+                author='By SE04 Team'
                 bidders={[
                   Avatar1,
                   Avatar2,

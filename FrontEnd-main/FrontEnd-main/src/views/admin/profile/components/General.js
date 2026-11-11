@@ -139,7 +139,7 @@ export default function GeneralInformation(props) {
         Your Information
       </Text>
       <Text color={textColorSecondary} fontSize='md' me='26px' mb='40px'>
-        From Tran Quoc Thai and SE_03 Team with love!
+        From SE04 Team
       </Text>
       <SimpleGrid columns='2' gap='20px'>
           <Information boxShadow={cardShadow} title='Full Name' value={user.fullName} />

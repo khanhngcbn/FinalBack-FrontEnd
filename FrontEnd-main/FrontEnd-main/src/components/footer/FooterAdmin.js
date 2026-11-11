@@ -45,7 +45,7 @@ export default function Footer() {
             href='https://www.simmmple.com?ref=horizon-chakra-free'
             target='_blank'
             fontWeight='700'>
-            SE_03 Team
+            SE04 Team
           </Link>
         </Text>
       </Text>
