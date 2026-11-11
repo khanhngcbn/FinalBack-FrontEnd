@@ -1,0 +1,48 @@
+# ==========================================
+# Bluemoon Monorepo .gitattributes
+# ==========================================
+
+# Tự động phát hiện text files và chuẩn hóa xuống dòng LF
+* text=auto
+
+# Windows scripts (giữ định dạng kết dòng CRLF)
+*.cmd text eol=crlf
+*.bat text eol=crlf
+*.ps1 text eol=crlf
+
+# Shell scripts & Maven wrapper trên Unix/Linux (giữ LF)
+*.sh text eol=lf
+mvnw text eol=lf
+
+# Mã nguồn chính (giữ LF chuẩn cross-platform)
+*.java text eol=lf
+*.js text eol=lf
+*.jsx text eol=lf
+*.ts text eol=lf
+*.tsx text eol=lf
+*.json text eol=lf
+*.xml text eol=lf
+*.properties text eol=lf
+*.css text eol=lf
+*.html text eol=lf
+*.md text eol=lf
+
+# Các file nhị phân (Binary files - tránh bị git làm hỏng định dạng)
+*.jar binary
+*.war binary
+*.zip binary
+*.tar.gz binary
+*.pdf binary
+*.ttf binary
+*.woff binary
+*.woff2 binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.svg text
+
+# Cấu hình Git LFS cho file jar / target (nếu có dùng Git LFS theo config của backend)
+target/*.jar filter=lfs diff=lfs merge=lfs -text
+target/** filter=lfs diff=lfs merge=lfs -text

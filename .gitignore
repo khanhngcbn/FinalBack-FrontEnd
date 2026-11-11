@@ -1,0 +1,71 @@
+# ==========================================
+# Bluemoon Monorepo .gitignore
+# Kết hợp rules của Frontend (React) & Backend (Spring Boot / Maven)
+# ==========================================
+
+# ------------------------------------------
+# 1. Backend (Spring Boot / Java / Maven)
+# ------------------------------------------
+# Thư mục build output của Maven
+**/target/*
+!**/target/*.jar
+!**/.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+**/bin/
+**/*.class
+**/HELP.md
+
+# Eclipse / STS IDE files
+**/.classpath
+**/.project
+**/.factorypath
+**/.settings/
+
+# Local database storage (nếu có)
+**/data/
+*.db
+
+# ------------------------------------------
+# 2. Frontend (React / Node / Webpack)
+# ------------------------------------------
+# Thư mục phụ thuộc và build
+**/node_modules/
+**/build/
+**/coverage/
+
+# Lockfiles (theo file .gitignore gốc của frontend)
+package-lock.json
+yarn.lock
+**/.pnp
+**/.pnp.js
+
+# File cấu hình môi trường cục bộ
+**/.env.local
+**/.env.development.local
+**/.env.test.local
+**/.env.production.local
+
+# Logs của npm/yarn
+**/npm-debug.log*
+**/yarn-debug.log*
+**/yarn-error.log*
+**/.vercel/
+
+# ------------------------------------------
+# 3. OS & IDE Metadata
+# ------------------------------------------
+# Hệ điều hành
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# JetBrains IDEA / VS Code
+.idea/
+*.iml
+*.iws
+*.ipr
+.vscode/
+
+# Thư mục tác vụ nội bộ
+.tasks/
